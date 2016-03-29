@@ -1,6 +1,5 @@
-# CDL
-Common-Description Learning
-This is a new framework to learn simples patterns from a few number of examples and use them to learn harder ones.
+# Common-Description Learning(CDL)
+This is a new framework to learn simples patterns from a few number of examples and use them to learn harder ones.\n
 The paper can be found at: arxiv.. 
 CDL is a library implements algorithms explaind in the paper and tested the framework on 32 small datasets
 
