@@ -9,7 +9,7 @@ Directories included in the library
 `CDL/`   - source code  
 `Dataset/`   - dataset divided into three groups (Group_A: 25 small datasets, Group_B: 5 small datasets,Group_C: 2 small datasets)   
 `results/`   - outputFile.txt: contain MGICDs learned in eac dataset and some statistics about training   
-             - 32 animation files that explain how MGICDs solve the test questions, they can be shown by calling `animate.py` but you                       need first to to change the directory of the animation file in the first line
+             - 32 animation files that explain how MGICDs solve the test questions, they can be shown by calling `animate.py` but you                       need first to to change the directory of the animation file in the first line   
              - any single CD in the outputFiles can be displayed by `visualizeCD`, but need first to copy it to CD.txt file 
 
 Example: three one-digit numbers addition Group_B (dataset_2)
