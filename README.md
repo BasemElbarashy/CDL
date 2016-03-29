@@ -15,8 +15,3 @@ Directories included in the library
 Example: three one-digit numbers addition Group_B (dataset_2)
 ---------------------
 ![example1](GifFiles/Group_b_dataset_2.gif)
-
- Markup : * Bullet list
-           * Nested bullet
-            * Sub-nested bullet etc
-          * Bullet list item 2
