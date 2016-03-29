@@ -3,7 +3,7 @@ This is a new framework to learn simples patterns from a few number of examples 
 are perfectly interpretable and its depth depends on the question. By 'depth' I mean that whenever needed the model learns to break down the problem into simpler subproblems and solve them first.
 The paper can be found at: arxiv..   
      
-CDL is a library implements algorithms explaind in the paper and tested on 32 small datasets
+CDL is a library written in C++ implements algorithms explaind in the paper and tested on 32 small datasets
 Directories included in the library
 -----------------------------------
 `CDL/`   - source code  
