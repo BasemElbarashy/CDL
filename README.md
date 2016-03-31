@@ -14,6 +14,14 @@ Directories included in the library
 * 32 animation files that explain how MGICDs solve the test questions, they can be shown by calling `animate.py` but need first to to change the directory of the animation file in the first line
 * Most of CDs in the outputFiles can be displayed by `visualizeCD.py`, but need first to copy it to CD.txt
 
-Example: three one-digit numbers addition Group_B (dataset_2)
+
+Example : three one-digit numbers addition Group_B (dataset_2)
 ---------------------
-![example1](GifFiles/Group_b_dataset_2.gif)
+![example1](GifFiles/Group_B_dataset_2.gif)
+
+
+Example: reverse task Group_A (dataset_19)
+---------------------
+![example1](GifFiles/Group_A_dataset_19.gif)
+
+
