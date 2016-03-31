@@ -22,6 +22,12 @@ Example : three one-digit numbers addition Group_B (dataset_2)
 
 Example: reverse task Group_A (dataset_19)
 ---------------------
-![example1](GifFiles/Group_A_dataset_19.gif)
+![example2](GifFiles/Group_A_dataset_19.gif)
+
+
+Example: Group_B (dataset_3)
+---------------------
+![example2](GifFiles/Group_B_dataset_3.gif)
+
 
 
