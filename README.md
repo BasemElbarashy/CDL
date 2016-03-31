@@ -31,3 +31,7 @@ Example: Group_B (dataset_3)
 
 
 
+Example: Group_A (dataset_24)
+---------------------
+![example2](GifFiles/Group_A_dataset_24.gif)
+
