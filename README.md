@@ -14,6 +14,10 @@ Directories included in the library
 * 32 animation files that explain how MGICDs solve the test questions, they can be shown by calling `animate.py` but need first to to change the directory of the animation file in the first line, and you can also change the animation speed by changing the value of nodeTime
 * Most of CDs in the outputFiles can be displayed by `visualizeCD.py`, but need first to copy it to CD.txt
 
+License
+---------------------
+This project is licensed under the terms of the MIT license
+
 
 Example : three one-digit numbers addition Group_B (dataset_2)
 ---------------------
