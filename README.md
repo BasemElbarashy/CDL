@@ -1,5 +1,5 @@
 # Common-Description Learning (CDL)
-This is a new framework to learn simples patterns from a few number of examples and use them to learn harder ones. the learned models
+This is a new framework to learn simples patterns from a few number of examples and use them to learn harder ones. the learned models
 are perfectly interpretable and its depth depends on the question. By 'depth' I mean that whenever needed the model learns to break down the problem into simpler subproblems and solve them first.
 The paper can be found at: arxiv..   
      
