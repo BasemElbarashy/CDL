@@ -18,6 +18,14 @@ License
 ---------------------
 This project is licensed under the terms of the MIT license
 
+Installation
+---------------------
+Usage
+---------------------
+Tasks
+---------------------
+Code Overview
+---------------------
 
 Example : three one-digit numbers addition Group_B (dataset_2)
 ---------------------
