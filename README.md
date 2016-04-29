@@ -8,6 +8,7 @@ CDL is written in C++ and tested on 32 small datasets
 Directories
 -----------------------------------
 `src/`       - source files
+
 `dataset/`   - dataset divided into three groups (Group_A: 25 small datasets, Group_B: 5 small datasets,Group_C: 2 small datasets)   
 
 `experiments/`   
@@ -19,13 +20,30 @@ Directories
 
 Installation
 ---------------------
-
+```
+make
+./runner
+```
 Usage
 ---------------------
-Tasks
----------------------
-Code Overview
----------------------
+You can edit `Driver.cpp` to learn datasets in Group_A, Group_B or Group_C. For example, to learn the first dataset in  Group_A:
+```
+    IOH.loadDatasetsAndQuestionsFromFile("dataset/Group_A.dat");
+    Constants::redirectStdoutToOutputFile = true;  //redirect stdout to OutputFile.txt
+                                                   //The results will be saved in OutputFile.txt
+    setHyperParameters(1,2,1,2,7,0,0,1);    //set hyperparamters for the 25 dataset in file Group_A.dat
+    TE.learnAndTest(0);                      //learn & test all Datasets in file Group_A.dat
+```
+The results and learned models will be save in `OutputFile.txt`. To learn all the datasets in Group_A: 
+```
+    IOH.loadDatasetsAndQuestionsFromFile("dataset/Group_A.dat");
+    Constants::redirectStdoutToOutputFile = true;  //redirect stdout to OutputFile.txt
+                                                   //The results will be saved in OutputFile.txt
+    setHyperParameters(1,2,1,2,7,0,0,1);    //set hyperparamters for the 25 dataset in file Group_A.dat
+    TE.learnAndTest();                      //learn & test all Datasets in file Group_A.dat
+```
+You can also write a new dataset and test but it must be formatted like other datasets
+
 
 Example : three one-digit numbers addition Group_B (dataset_2)
 ---------------------
