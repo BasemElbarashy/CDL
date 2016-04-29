@@ -27,7 +27,7 @@ make
 Usage
 ---------------------
 You can edit `Driver.cpp` to learn datasets in Group_A, Group_B or Group_C. For example, to learn the first dataset in  Group_A write this in main():
-```cpp
+```C++
     IOH.loadDatasetsAndQuestionsFromFile("dataset/Group_A.dat");
     Constants::redirectStdoutToOutputFile = true;  //redirect stdout to OutputFile.txt
                                                    //The results will be saved in OutputFile.txt
