@@ -22,68 +22,84 @@
       <h1>
 <a id="common-description-learning-cdl" class="anchor" href="#common-description-learning-cdl" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Common-Description Learning (CDL)</h1>
 
-<p>This is a new framework to learn simples patterns from a few number of examples and use them to learn harder ones. the learned models
-are perfectly interpretable and its depth depends on the question. By 'depth' I mean that whenever needed the model learns to break down the problem into simpler subproblems and solve them first.
-The paper can be found at: arxiv..   </p>
+<p>This is a new framework to learn simples patterns from a few number of examples and use them to learn harder ones. the learned models are perfectly interpretable and its depth depends on the question. What is meant by depth here is that
+whenever needed, the model learns to break down the problem into simpler subproblems
+and solves them using previously learned models, CDL is written in C++ and tested on 32 small datasets</p>
 
-<p>CDL is a library written in C++ implements algorithms explaind in the paper and tested on 32 small datasets</p>
+<p>The paper can be found at: arxiv..   </p>
 
 <h2>
-<a id="directories-included-in-the-library" class="anchor" href="#directories-included-in-the-library" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Directories included in the library</h2>
+<a id="group_b-dataset_2-three-one-digit-numbers-addition" class="anchor" href="#group_b-dataset_2-three-one-digit-numbers-addition" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Group_B (dataset_2): Three one-digit numbers addition</h2>
 
-<p><code>CDL/</code>   - source code<br>
-<code>Dataset/</code>   - dataset divided into three groups (Group_A: 25 small datasets, Group_B: 5 small datasets,Group_C: 2 small datasets)   </p>
+<p><img src="GifFiles/Group_B_dataset_2.gif" alt="example1"></p>
 
-<p><code>results/</code>   </p>
+<p><br><br><br></p>
+
+<h2>
+<a id="dataset_19-reverse-task-group_a" class="anchor" href="#dataset_19-reverse-task-group_a" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(dataset_19): Reverse task Group_A</h2>
+
+<p><img src="GifFiles/Group_A_dataset_19.gif" alt="example2"></p>
+
+<p><br><br><br></p>
+
+<h2>
+<a id="group_b-dataset_3" class="anchor" href="#group_b-dataset_3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Group_B (dataset_3)</h2>
+
+<p><img src="GifFiles/Group_B_dataset_3.gif" alt="example2"></p>
+
+<p><br><br><br></p>
+
+<h2>
+<a id="group_a-dataset_24-comparing-one-digit-numbers" class="anchor" href="#group_a-dataset_24-comparing-one-digit-numbers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Group_A (dataset_24): Comparing One Digit Numbers</h2>
+
+<p><img src="GifFiles/Group_A_dataset_24.gif" alt="example2"></p>
+
+<h2>
+<a id="directories" class="anchor" href="#directories" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Directories</h2>
+
+<p><code>src/</code>       - source files</p>
+
+<p><code>dataset/</code>   - dataset divided into three groups (Group_A: 25 small datasets, Group_B: 5 small datasets,Group_C: 2 small datasets)   </p>
+
+<p><code>experiments/</code>   </p>
 
 <ul>
 <li>3 outputFiles: contain MGICDs learned in each group of datasets and some statistics about training</li>
-<li>32 animation files that explain how MGICDs solve the test questions, they can be shown by calling <code>animate.py</code> but need first to to change the directory of the animation file in the first line, and you can also change the animation speed by changing the value of nodeTime</li>
-<li>Most of CDs in the outputFiles can be displayed by <code>visualizeCD.py</code>, but need first to copy it to CD.txt</li>
+<li>32 animation files that explain how MGICD solve the test questions, they can be shown by running <code>animate.py</code> but need first to to change the directory of the animation file in the first line. you can also change the animation speed by changing the value of nodeTime. Tested on Python 3</li>
+<li>Most of CDs in the outputFiles can be displayed by <code>visualizeCD.py</code>, but it need first to be copied in CD.dat</li>
 </ul>
+
+<h2>
+<a id="installation-on-linux" class="anchor" href="#installation-on-linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation on Linux</h2>
+
+<pre><code>$ make
+$ ./runner
+</code></pre>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>You can edit <code>Driver.cpp</code> to learn datasets in Group_A, Group_B or Group_C. For example, to learn the first dataset in  Group_A write this in main():</p>
+
+<div class="highlight highlight-source-c++"><pre>    IOH.loadDatasetsAndQuestionsFromFile(<span class="pl-s"><span class="pl-pds">"</span>dataset/Group_A.dat<span class="pl-pds">"</span></span>);
+    Constants::redirectStdoutToOutputFile = <span class="pl-c1">true</span>;  <span class="pl-c">//redirect stdout to OutputFile.txt</span>
+    <span class="pl-en">setHyperParameters</span>(<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">7</span>,<span class="pl-c1">0</span>,<span class="pl-c1">0</span>,<span class="pl-c1">1</span>);           <span class="pl-c">//set hyperparamters for the 25 dataset in file Group_A.dat</span>
+    TE.learnAndTest(<span class="pl-c1">0</span>);                            <span class="pl-c">//learn &amp; test the first Dataset in file Group_A.dat</span></pre></div>
+
+<p>The results and learned models will be save in <code>OutputFile.txt</code>.
+To learn all the datasets in Group_A: </p>
+
+<div class="highlight highlight-source-c++"><pre>    IOH.loadDatasetsAndQuestionsFromFile(<span class="pl-s"><span class="pl-pds">"</span>dataset/Group_A.dat<span class="pl-pds">"</span></span>);
+    Constants::redirectStdoutToOutputFile = <span class="pl-c1">true</span>;  <span class="pl-c">//redirect stdout to OutputFile.txt</span>
+    <span class="pl-en">setHyperParameters</span>(<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">7</span>,<span class="pl-c1">0</span>,<span class="pl-c1">0</span>,<span class="pl-c1">1</span>);           <span class="pl-c">//set hyperparamters for the 25 dataset in file Group_A.dat</span>
+    TE.learnAndTest();                             <span class="pl-c">//learn &amp; test all Datasets in file Group_A.dat</span></pre></div>
+
+<p>You can also write a new dataset and test it but it must be formatted like other datasets</p>
 
 <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
 
 <p>This project is licensed under the terms of the MIT license</p>
-
-<h2>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
-
-<h2>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
-
-<h2>
-<a id="tasks" class="anchor" href="#tasks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tasks</h2>
-
-<h2>
-<a id="code-overview" class="anchor" href="#code-overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Code Overview</h2>
-
-<h2>
-<a id="example--three-one-digit-numbers-addition-group_b-dataset_2" class="anchor" href="#example--three-one-digit-numbers-addition-group_b-dataset_2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example : three one-digit numbers addition Group_B (dataset_2)</h2>
-
-<p><img src="https://raw.githubusercontent.com/BasemElbarashy/CDL/master/GifFiles/Group_B_dataset_2.gif" alt=""></p>
-
-<p><br><br><br></p>
-
-<h2>
-<a id="example-reverse-task-group_a-dataset_19" class="anchor" href="#example-reverse-task-group_a-dataset_19" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example: reverse task Group_A (dataset_19)</h2>
-
-<p><img src="https://raw.githubusercontent.com/BasemElbarashy/CDL/master/GifFiles/Group_A_dataset_19.gif" alt=""></p>
-
-<p><br><br><br></p>
-
-<h2>
-<a id="example-group_b-dataset_3" class="anchor" href="#example-group_b-dataset_3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example: Group_B (dataset_3)</h2>
-
-<p><img src="https://raw.githubusercontent.com/BasemElbarashy/CDL/master/GifFiles/Group_B_dataset_3.gif" alt=""></p>
-
-<p><br><br><br></p>
-
-<h2>
-<a id="example-group_a-dataset_24" class="anchor" href="#example-group_a-dataset_24" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example: Group_A (dataset_24)</h2>
-
-<p><img src="https://raw.githubusercontent.com/BasemElbarashy/CDL/master/GifFiles/Group_A_dataset_24.gif" alt=""></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/BasemElbarashy/CDL">CDL: A Framework for Learning Algorithms and Generating Subproblems from Few Examples</a> is maintained by <a href="https://github.com/BasemElbarashy">BasemElbarashy</a>.</span>
