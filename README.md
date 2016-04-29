@@ -26,16 +26,17 @@ make
 ```
 Usage
 ---------------------
-You can edit `Driver.cpp` to learn datasets in Group_A, Group_B or Group_C. For example, to learn the first dataset in  Group_A:
-```
+You can edit `Driver.cpp` to learn datasets in Group_A, Group_B or Group_C. For example, to learn the first dataset in  Group_A write this in main():
+```cpp
     IOH.loadDatasetsAndQuestionsFromFile("dataset/Group_A.dat");
     Constants::redirectStdoutToOutputFile = true;  //redirect stdout to OutputFile.txt
                                                    //The results will be saved in OutputFile.txt
     setHyperParameters(1,2,1,2,7,0,0,1);    //set hyperparamters for the 25 dataset in file Group_A.dat
-    TE.learnAndTest(0);                      //learn & test all Datasets in file Group_A.dat
+    TE.learnAndTest(0);                      //learn & test the first Dataset in file Group_A.dat
 ```
-The results and learned models will be save in `OutputFile.txt`. To learn all the datasets in Group_A: 
-```
+The results and learned models will be save in `OutputFile.txt`.
+To learn all the datasets in Group_A: 
+```cpp
     IOH.loadDatasetsAndQuestionsFromFile("dataset/Group_A.dat");
     Constants::redirectStdoutToOutputFile = true;  //redirect stdout to OutputFile.txt
                                                    //The results will be saved in OutputFile.txt
