@@ -2,16 +2,17 @@
 This is a new framework to learn simples patterns from a few number of examples and use them to learn harder ones. the learned models are perfectly interpretable and its depth depends on the question. What is meant by depth here is that
 whenever needed, the model learns to break down the problem into simpler subproblems
 and solves them using previously learned models, CDL is written in C++ and tested on 32 small datasets
+
 The paper can be found at: arxiv..   
 
 
-Three one-digit numbers addition Group_B (dataset_2)
+Group_B (dataset_2): Three one-digit numbers addition
 ---------------------
 ![example1](GifFiles/Group_B_dataset_2.gif)
 
 <br><br><br>
 
-Reverse task Group_A (dataset_19)
+(dataset_19): Reverse task Group_A
 ---------------------
 ![example2](GifFiles/Group_A_dataset_19.gif)
 
@@ -23,7 +24,7 @@ Group_B (dataset_3)
 
 <br><br><br>
 
-Group_A (dataset_24)
+Group_A (dataset_24): Comparing One Digit Numbers
 ---------------------
 ![example2](GifFiles/Group_A_dataset_24.gif)
 
