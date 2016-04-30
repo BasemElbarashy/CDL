@@ -22,9 +22,8 @@
       <h1>
 <a id="common-description-learning-cdl" class="anchor" href="#common-description-learning-cdl" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Common-Description Learning (CDL)</h1>
 
-<p>This is a new framework to learn simples patterns from a few number of examples and use them to learn harder ones. the learned models are perfectly interpretable and its depth depends on the question. What is meant by depth here is that
-whenever needed, the model learns to break down the problem into simpler subproblems
-and solves them using previously learned models, CDL is written in C++ and tested on 32 small datasets</p>
+<p>This is a new framework to learn simples patterns from a few number of examples and use them to learn complex ones. the learned models are perfectly interpretable and its depth depends on the question. What is meant by depth here is that
+whenever needed, the model learns to break down the problem into simpler subproblems and solves them using previously learned models, CDL is written in C++ and tested on 32 small datasets</p>
 
 <p>The paper can be found at: arxiv..   </p>
 
@@ -59,14 +58,14 @@ and solves them using previously learned models, CDL is written in C++ and teste
 
 <p><code>src/</code>       - source files</p>
 
-<p><code>dataset/</code>   - dataset divided into three groups (Group_A: 25 small datasets, Group_B: 5 small datasets,Group_C: 2 small datasets)   </p>
+<p><code>dataset/</code>   - three groups of small datasets (Group_A: 25 datasets, Group_B: 5 datasets,Group_C: 2 datasets). The first line in Group_A.dat contains the number of the first dataset in the file (must be 0). The next line contains the number of training sequences followed by the training seqences. The next line conatins number of testing sequences followed by the testing sequences.   </p>
 
 <p><code>experiments/</code>   </p>
 
 <ul>
-<li>3 outputFiles: contain MGICDs learned in each group of datasets and some statistics about training</li>
-<li>32 animation files that explain how MGICD solve the test questions, they can be shown by running <code>animate.py</code> but need first to to change the directory of the animation file in the first line. you can also change the animation speed by changing the value of nodeTime. Tested on Python 3</li>
-<li>Most of CDs in the outputFiles can be displayed by <code>visualizeCD.py</code>, but it need first to be copied in CD.dat</li>
+<li>3 outputFiles: contain MGICDs learned in each group of datasets and some details about training</li>
+<li>32 animation files that explain how MGICD solve the test questions, they can be shown by running <code>animate.py</code> but you need first to change the directory of the animation file in the first line in <code>animate.py</code>. You can also change the animation speed by changing the value of nodeTime (Tested on Python 3).</li>
+<li>Most of PCDs in the outputFiles can be displayed by <code>visualizeCD.py</code>, but it need first to be copied in CD.dat</li>
 </ul>
 
 <h2>
@@ -86,7 +85,7 @@ $ ./runner
     <span class="pl-en">setHyperParameters</span>(<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">7</span>,<span class="pl-c1">0</span>,<span class="pl-c1">0</span>,<span class="pl-c1">1</span>);           <span class="pl-c">//set hyperparamters for the 25 dataset in file Group_A.dat</span>
     TE.learnAndTest(<span class="pl-c1">0</span>);                            <span class="pl-c">//learn &amp; test the first Dataset in file Group_A.dat</span></pre></div>
 
-<p>The results and learned models will be save in <code>OutputFile.txt</code>.
+<p>The results and learned models will be saved in <code>OutputFile.txt</code>.
 To learn all the datasets in Group_A: </p>
 
 <div class="highlight highlight-source-c++"><pre>    IOH.loadDatasetsAndQuestionsFromFile(<span class="pl-s"><span class="pl-pds">"</span>dataset/Group_A.dat<span class="pl-pds">"</span></span>);
