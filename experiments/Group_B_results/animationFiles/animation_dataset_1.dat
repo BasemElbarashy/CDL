@@ -1,0 +1,108 @@
+12
+Ahmed is 16 
+Ali is 16 
+Mona is 14 
+Jack is 14 
+Kareem is 15 
+Dalia is 15 
+Is Ahmed as old as Ali ? Yes 
+Is Ahmed as old as Mona ? No 
+Is Kareem as old as Jack ? No 
+Is Ali as old as Ahmed ? Yes 
+Is Jack as old as Mona ? Yes 
+Is Jack as old as Kareem ? No 
+Question 0
+Is Ahmed as old as Dalia ?
+Is Yes No 
+NegativePart
+1 -1 1 -1 0 0
+-1 -1 7 -1 8 0
+1 -1 2 -1 1 0
+-1 -1 6 -1 7 0
+6 Ahmed
+7 1
+Ahmed 16 
+PositivePart
+1 -1 1 -1 0 0
+2 -1 1 Ahmed 1
+5 16
+Succeeded
+7 0
+6 Dalia
+7 1
+15 Dalia 
+PositivePart
+1 -1 1 -1 0 0
+2 -1 1 Dalia 1
+5 15
+Succeeded
+7 0
+2 0
+Failed
+PositivePart
+1 -1 1 -1 0 0
+2 -1 1 Is 1
+5 No
+Succeeded
+Question 1
+Is Kareem as old as Dalia ?
+Yes 
+PositivePart
+1 -1 1 -1 0 0
+-1 -1 7 -1 8 0
+1 -1 2 -1 1 0
+-1 -1 6 -1 7 0
+6 Kareem
+7 1
+Kareem 15 
+PositivePart
+1 -1 1 -1 0 0
+2 -1 1 Kareem 1
+5 15
+Succeeded
+7 0
+6 Dalia
+7 1
+15 Dalia 
+PositivePart
+1 -1 1 -1 0 0
+2 -1 1 Dalia 1
+5 15
+Succeeded
+7 0
+2 1
+5 Yes
+Succeeded
+Question 2
+Is Kareem as old as Mona ?
+Is Yes No 
+NegativePart
+1 -1 1 -1 0 0
+-1 -1 7 -1 8 0
+1 -1 2 -1 1 0
+-1 -1 6 -1 7 0
+6 Kareem
+7 1
+Kareem 15 
+PositivePart
+1 -1 1 -1 0 0
+2 -1 1 Kareem 1
+5 15
+Succeeded
+7 0
+6 Mona
+7 1
+Mona 14 
+PositivePart
+1 -1 1 -1 0 0
+2 -1 1 Mona 1
+5 14
+Succeeded
+7 0
+2 0
+Failed
+PositivePart
+1 -1 1 -1 0 0
+2 -1 1 Is 1
+5 No
+Succeeded

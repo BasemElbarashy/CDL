@@ -1,0 +1,331 @@
+(0)
+4
+1 short
+3 4 5 short
+10 11 12 13 14 long
+6 7 8 9 long
+2
+A V short
+M M M M M M long
+(1)
+5
+A B M
+A C M
+A D M
+A F G
+H F G
+2
+A K M
+O F G
+(2)
+3
+A = A
+B = B
+E F = F
+2
+C = C
+k l m n = n
+(3)
+3
+A = A
+B = B
+E F = E
+2
+C = C
+k l m n = k
+(4)
+9
+0 0 0 length=3
+1 2 3 length=3
+4 5 6 length=3
+7 8 9 length=3
+10 11 length!=3
+12 12 length!=3
+13 length!=3
+14 14 14 14 length!=3
+15 16 17 18 19 length!=3
+4
+A B C length=3
+D E F G H I J K length!=3
+4 5 6 length=3
+1 3 length!=3
+(5)
+5
+1 2 3 4 5 true
+6 7 5 true
+8 5 9 false
+5 5 5 10 false
+5 1 false
+5
+5 true
+5 5 true
+5 5 5 5 5 5 5 5 5 6 false
+1 2 3 4 5 5 5 5 5 5 6 false
+6 7 8 false
+(6)
+7
+1 2 3 H 32 Yes
+4 5 H 6 7 Yes
+8 H 31 Yes
+9 10 11 12 13 14 15 H 16 17 Yes
+18 19 No
+20 21 22 23 No
+24 25 26 27 28 29 30 No
+4
+H 1 2 3 Yes
+H H H Yes
+1 2 H Yes
+1 2 3 4 5 6 7 8 9 0 1 10 No
+(7)
+3
+1 7 5 4 H 5 6 = 5
+9 8 H 9 = 9
+H 11 H 12 = 11
+2
+H H = H
+14 15 17 19 21 22 H 23 24 H 25 H H = 23
+(8)
+6
+5 7 6 4 H 5 8 6 = 5
+0 8 H 9 9 8 10 = 9
+H 1 H 2 H 4 5 H = 1
+14 H 11 12 13 = 11
+3 8 H = 8
+2 4 7 6 H = 6
+3
+H H H H = H
+14 15 H 17 H 19 H 21 22 H 23 24 25 = 17
+14 14 14 14 14 14 14 14 14 14 14 14 24 H = 24
+(9)
+5
+1 2 3 4 1 5 Yes
+6 7 6 Yes
+8 9 8 10 11 12 Yes
+13 14 15 16 No
+17 18 No
+4
+1 1 Yes
+1 2 No
+5 6 6 6 No
+7 8 8 8 8 8 8 8 8 8 8 8 7 Yes
+(10)
+4
+1 1 1 2 3 4 = 2
+1 1 5 6 = 5
+1 1 1 1 7 8 = 7
+1 1 1 1 1 4 3 2 7 8 = 4
+2
+1 9 = 9
+1 1 1 1 1 1 1 1 10 = 10
+(11)
+5
+1 1 1 = Yes
+2 2 = Yes
+3 = Yes
+1 2 1 = No
+1 1 1 3 = No
+4
+5 5 5 5 5 5 5 5 5 = Yes
+5 5 5 5 5 4 5 5 = No
+5 5 5 5 5 5 5 4 = No
+6 = Yes
+(12)
+8
+4 5 6 6 23 24 = 4 5 6 6 23 24 = Equal
+40 40 = 40 40 = Equal
+1 2 3 2 1 = 1 2 3 2 1 = Equal
+11 12 13 14 25 = 11 12 13 14 26 = Unequal
+15 16 = 16 15 = Unequal
+17 18 = 19 18 = Unequal
+19 20 21 = 19 22 21 = Unequal
+4 5 5 4 4 5 = 4 5 4 4 5 5 = Unequal
+10
+1 2 3 1 5 6 7 = 1 2 3 1 5 6 7 = Equal
+4 5 6 4 5 6 = 4 5 6 4 5 6 = Equal
+4 5 5 4 5 5 = 4 5 5 4 5 5 = Equal
+1 1 1 1 = 1 1 1 1 = Equal
+1 1 2 1 1 = 1 1 3 1 1 = Unequal
+16 = 17 = Unequal
+8 9 10 11 = 8 9 10 11 = Equal
+16 17 18 = 18 16 17 = Unequal
+16 17 18 = 16 17 16 = Unequal
+16 17 18 = 18 17 18 = Unequal
+(13)
+6
+1 2 3 = 1 4 5 = 2
+6 7 8 9 17 18 = 6 7 10 11 = 8
+12 13 14 15 = 12 13 14 16 = 15
+17 = 18 = 17
+19 20 = 19 21 22 23 24 = 20
+1 2 3 = 1 4 3 2 = 2
+2
+1 2 3 = 3 2 1 = 1
+1 2 3 4 5 6 7 = 1 2 3 4 5 6 8 = 7
+(14)
+8
+4 5 6 6 23 24 = 24 23 6 6 5 4 = Reversed
+40 40 = 40 40 = Reversed
+1 2 3 2 1 = 1 2 3 2 1 = Reversed
+11 12 13 14 25 = 26 14 13 12 11 = notReversed
+15 16 = 15 16 = notReversed
+17 18 = 18 19 = notReversed
+19 20 21 = 21 22 19 = notReversed
+4 5 5 4 4 5 = 5 5 4 4 5 4 = notReversed
+10
+1 2 3 1 5 6 7 = 7 6 5 1 3 2 1 = Reversed
+4 5 6 4 5 6 = 6 5 4 6 5 4 = Reversed
+4 5 5 4 5 5 = 5 5 4 5 5 4 = Reversed
+1 1 1 1 = 1 1 1 1 = Reversed
+1 1 2 1 1 = 1 1 3 1 1 = notReversed
+16 = 17 = notReversed
+8 9 10 11 = 11 10 9 8 = Reversed
+16 17 18 = 18 16 17 = notReversed
+16 17 18 = 16 17 16 = notReversed
+16 17 18 = 18 17 18 = notReversed
+(15)
+4
+1 2 3 E a b = c = d = f g = f
+4 5 E b = c d = n g = t = n
+7 E a  =  m d = f = l = m
+1 2 3 4 5 6 E f s = = = = = a = g = g
+2
+1 2 3 4 5 E = = f = f = f = y = y
+h o E = 1 = 2 = 4 = 5 6 7 = 8 = 2
+(16)
+4
+3 3 5 = 5
+6 7 6 6 8 9 10 = 8
+11 12 12 13 12 12 14 12 = 13
+15 16 17 17 16 15 = 16
+3
+1 1 1 1 1 1 1 1 1 1 1 1 1 = 1
+1 2 1 2 1 2 3 2 2 4 2 2 5 = 4
+1 2 1 2 1 2 3 2 2 2 4 2 2 5 = 2
+(17)
+6
+a b c d c e = true
+g h d h y j = true
+f d f = true
+k l m d n = false
+o r d b q = false
+r f t f d u f = false
+4
+f d d = false
+1 2 d 1 2 = false
+1 2 f 2 1 = false
+1 2 3 4 5 6 7 8 d 8 = true
+(18)
+12
+e h j v a b i c i d i f g i f
+k o v b i c d i n g i t i n
+q v a i m d i f i l i m
+e h j k o p v f s i i i i i a i g i g
+1 2 3 = 1 2 3 = Equal
+4 5 6 7 23 24 = 4 5 6 7 23 24 = Equal
+11 12 13 14 25 = 11 12 13 14 26 = Unequal
+40 210 = 40 210 = Equal
+15 16 = 16 15 = Unequal
+17 18 = 19 18 = Unequal
+19 20 21 = 19 22 21 = Unequal
+23 24 25 = 26 24 25 = Unequal
+8
+e h j k o v i i f i f i f i y i y
+h o v i 1 i 2 i 4 i 5 6 7 i 8 i 2
+1 2 3 4 5 6 7 = 1 2 3 4 5 6 7 = Equal
+16 = 17 = Unequal
+8 9 10 11 = 8 9 10 11 = Equal
+16 17 18 = 18 16 17 = Unequal
+16 17 18 = 16 17 16 = Unequal
+16 17 18 = 18 17 18 = Unequal
+(19)
+7
+1 2 3 = 3 2
+4 5 4 = 4 5
+6 7 7 = 7 7 6
+12 11 13 11 = 11
+12 11 13 11 = 11 13
+15 14 11 = 11 14 15
+8 9 10 10 10 8 = 8 10 10 10 9
+8
+a b c d b f g h = h
+a b c d b f g h = h g
+a b c d b f g h = h g f
+a b c d b f g h = h g f b
+a b c d b f g h = h g f b d
+a b c d b f g h = h g f b d c
+a b c d b f g h = h g f b d c b
+a b c d b f g h = h g f b d c b a
+(20)
+7
+1 2 3 = 1 2
+4 5 4 = 4 5
+6 7 7 = 6 7 7
+12 11 13 11 = 12
+12 11 13 11 = 12 11
+15 14 11 = 15 14
+8 9 10 10 10 8 = 8 9 10 10 10 8
+8
+a b c d b f g h = a
+a b c d b f g h = a b
+a b c d b f g h = a b c
+a b c d b f g h = a b c d
+a b c d b f g h = a b c d b
+a b c d b f g h = a b c d b f
+a b c d b f g h = a b c d b f g
+a b c d b f g h = a b c d b f g h
+(21)
+8
+0 1 2 3 4 5 6 7 8 9
+1 isDigit
+4 isDigit
+8 isDigit
+2 isDigit
+0 isDigit
+A isNotDigit
+C isNotDigit
+2
+5 isDigit
+D isNotDigit
+(22)
+7
+0 1 2 3 4 5 6 7 8 9
+2 after 1
+3 after 2
+5 after 4
+9 after 8
+1 after 0
+6 after 5
+2
+7 after 6
+4 after 3
+(23)
+7
+0 1 2 3 4 5 6 7 8 9
+1 before 2
+2 before 3
+4 before 5
+8 before 9
+0 before 1
+7 before 8
+2
+6 before 7
+3 before 4
+(24)
+11
+0 1 2 3 4 5 6 7 8 9
+9 > 0 Right
+8 > 6 Right
+2 > 1 Right
+4 > 4 Wrong
+9 > 3 Right
+0 > 9 Wrong
+7 > 8 Wrong
+1 > 2 Wrong
+1 > 5 Wrong
+3 > 9 Wrong
+5
+6 > 1 Right
+1 > 6 Wrong
+1 > 0 Right
+7 > 7 Wrong
+0 > 8 Wrong

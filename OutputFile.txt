@@ -1,0 +1,1861 @@
+
+===============================================================
+[ Dataset no ( 0 ) ]
+
+Number of training sequences = 4
+0 1 2 3 PCDs => VCDs 15 => Gamma 15 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+1100
+0011
+
+Generation of PCDs   took 0.07 minutes
+Generation of VCDs   took 0.00 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 19 ( 6 valid )
+Number of VCDs = 15 ( 6 VPCD, 9 VHCD_1N )
+Gamma = 15
+
+Number of VCDs in MGICDs  = 2
+Number of Nodes in MGICDs = 10
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "short"
+[2] SOURCE :  Next 1
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : "long"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+[5] ASSIGN_AFTER : (5) = (4) + 1   Next 6
+[6] ASSIGN_AFTER : (6) = (5) + 1   Next 1
+
+---------  [[1]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : "long"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+[5] ASSIGN_AFTER : (5) = (4) + 1   Next 6
+[6] ASSIGN_AFTER : (6) = (5) + 1   Next 1
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = short
+
+Matched VCD: 1
+Question 1 : predicted answer = long
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 1 ) ]
+
+Number of training sequences = 5
+0 1 2 3 4 PCDs => VCDs 33 => Gamma 8 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+11100
+00011
+
+Generation of PCDs   took 0.66 minutes
+Generation of VCDs   took 0.00 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 37 ( 8 valid )
+Number of VCDs = 33 ( 8 VPCD, 25 VHCD_1N )
+Gamma = 8
+
+Number of VCDs in MGICDs  = 2
+Number of Nodes in MGICDs = 8
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "M"
+[2] SOURCE :  Next 1
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : "G"
+[2] SOURCE :  Next 3
+[3] ASSIGN_BEFORE : (3) = (e) - 1   Next 4
+[4] COND_VALUE : (3) == "F"   Next 1 0
+
+---------  [[1]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : "G"
+[2] SOURCE :  Next 3
+[3] ASSIGN_BEFORE : (3) = (e) - 1   Next 4
+[4] COND_VALUE : (3) == "F"   Next 1 0
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = M
+
+Matched VCD: 1
+Question 1 : predicted answer = G
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 2 ) ]
+
+Number of training sequences = 3
+0 1 2 PCDs => VCDs 9 => Gamma 5 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+111
+
+Generation of PCDs   took 0.51 minutes
+Generation of VCDs   took 0.00 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 23 ( 7 valid )
+Number of VCDs = 9 ( 7 VPCD, 2 VHCD_1N )
+Gamma = 5
+
+Number of VCDs in MGICDs  = 1
+Number of Nodes in MGICDs = 5
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : (4)
+[2] SOURCE :  Next 3
+[3] ASSIGN_BEFORE : (3) = (e) - 1   Next 4
+[4] ASSIGN_BEFORE : (4) = (3) - 1   Next 1
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = C
+
+Matched VCD: 0
+Question 1 : predicted answer = n
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 3 ) ]
+
+Number of training sequences = 3
+0 1 2 PCDs => VCDs 9 => Gamma 4 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+111
+
+Generation of PCDs   took 0.42 minutes
+Generation of VCDs   took 0.00 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 23 ( 7 valid )
+Number of VCDs = 9 ( 7 VPCD, 2 VHCD_1N )
+Gamma = 4
+
+Number of VCDs in MGICDs  = 1
+Number of Nodes in MGICDs = 4
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : (3)
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 1
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = C
+
+Matched VCD: 0
+Question 1 : predicted answer = k
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 4 ) ]
+
+Number of training sequences = 9
+0 1 2 3 4 5 6 7 8 PCDs => VCDs 448 => Gamma 16 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+111100000
+000011100
+000000011
+
+Generation of PCDs   took 0.13 minutes
+Generation of VCDs   took 0.00 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 92 ( 12 valid )
+Number of VCDs = 448 ( 12 VPCD, 436 VHCD_1N )
+Gamma = 16
+
+Number of VCDs in MGICDs  = 3
+Number of Nodes in MGICDs = 16
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "length=3"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+[5] ASSIGN_AFTER : (5) = (4) + 1   Next 1
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : "length!=3"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+[5] ASSIGN_AFTER : (5) = (4) + 1   Next 6
+[6] ASSIGN_AFTER : (6) = (5) + 1   Next 1
+
+---------  [[1]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "length!=3"
+[2] SOURCE :  Next 1
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : "length=3"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+[5] ASSIGN_AFTER : (5) = (4) + 1   Next 1
+
+---------  [[2]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : "length!=3"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+[5] ASSIGN_AFTER : (5) = (4) + 1   Next 6
+[6] ASSIGN_AFTER : (6) = (5) + 1   Next 1
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = length=3
+
+Matched VCD: 2
+Question 1 : predicted answer = length!=3
+
+Matched VCD: 0
+Question 2 : predicted answer = length=3
+
+Matched VCD: 1
+Question 3 : predicted answer = length!=3
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 5 ) ]
+
+Number of training sequences = 5
+0 1 2 3 4 PCDs => VCDs 178 => Gamma 8 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+11000
+00111
+
+Generation of PCDs   took 1.63 minutes
+Generation of VCDs   took 0.00 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 69 ( 10 valid )
+Number of VCDs = 178 ( 10 VPCD, 168 VHCD_1N )
+Gamma = 8
+
+Number of VCDs in MGICDs  = 2
+Number of Nodes in MGICDs = 8
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : "true"
+[2] SOURCE :  Next 3
+[3] ASSIGN_BEFORE : (3) = (e) - 1   Next 4
+[4] COND_VALUE : (3) == "5"   Next 1 0
+
+---------  [[1]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "false"
+[2] SOURCE :  Next 1
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : "true"
+[2] SOURCE :  Next 3
+[3] ASSIGN_BEFORE : (3) = (e) - 1   Next 4
+[4] COND_VALUE : (3) == "5"   Next 1 0
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = true
+
+Matched VCD: 0
+Question 1 : predicted answer = true
+
+Matched VCD: 1
+Question 2 : predicted answer = false
+
+Matched VCD: 1
+Question 3 : predicted answer = false
+
+Matched VCD: 1
+Question 4 : predicted answer = false
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 6 ) ]
+
+Number of training sequences = 7
+0 1 2 3 4 5 6 PCDs => VCDs 871 => Gamma 9 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+1111000
+0000111
+
+Generation of PCDs   took 2.46 minutes
+Generation of VCDs   took 0.00 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 148 ( 19 valid )
+Number of VCDs = 871 ( 19 VPCD, 852 VHCD_1N )
+Gamma = 9
+
+Number of VCDs in MGICDs  = 2
+Number of Nodes in MGICDs = 9
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : "Yes"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+
+Cycle[ 1 ] start
+[4] COND_VALUE : (3) == "H"   Next 1 5
+[5] ASSIGN_AFTER : (3) = (3) + 1   Next 4
+Cycle[ 1 ] end
+
+
+---------  [[1]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "No"
+[2] SOURCE :  Next 1
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : "Yes"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+
+Cycle[ 1 ] start
+[4] COND_VALUE : (3) == "H"   Next 1 5
+[5] ASSIGN_AFTER : (3) = (3) + 1   Next 4
+Cycle[ 1 ] end
+
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = Yes
+
+Matched VCD: 0
+Question 1 : predicted answer = Yes
+
+Matched VCD: 0
+Question 2 : predicted answer = Yes
+
+Matched VCD: 1
+Question 3 : predicted answer = No
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 7 ) ]
+
+Number of training sequences = 3
+0 1 2 PCDs => VCDs 13 => Gamma 7 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+111
+
+Generation of PCDs   took 1.51 minutes
+Generation of VCDs   took 0.00 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 26 ( 7 valid )
+Number of VCDs = 13 ( 7 VPCD, 6 VHCD_1N )
+Gamma = 7
+
+Number of VCDs in MGICDs  = 1
+Number of Nodes in MGICDs = 7
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : (4)
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+
+Cycle[ 1 ] start
+[4] COND_VALUE : (3) == "H"   Next 6 5
+[5] ASSIGN_AFTER : (3) = (3) + 1   Next 4
+Cycle[ 1 ] end
+
+[6] ASSIGN_AFTER : (4) = (3) + 1   Next 1
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = H
+
+Matched VCD: 0
+Question 1 : predicted answer = 23
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 8 ) ]
+
+Number of training sequences = 6
+0 1 2 3 4 5 PCDs => VCDs 13819 => Gamma 14 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+111100
+000011
+
+Generation of PCDs   took 11.88 minutes
+Generation of VCDs   took 0.04 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 561 ( 35 valid )
+Number of VCDs = 13819 ( 35 VPCD, 13784 VHCD_1N )
+Gamma = 14
+
+Number of VCDs in MGICDs  = 2
+Number of Nodes in MGICDs = 14
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : (4)
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+
+Cycle[ 1 ] start
+[4] COND_VALUE : (3) == "H"   Next 6 5
+[5] ASSIGN_AFTER : (3) = (3) + 1   Next 4
+Cycle[ 1 ] end
+
+[6] ASSIGN_AFTER : (4) = (3) + 1   Next 7
+[7] ASSIGN_AFTER : (5) = (4) + 1   Next 1
+
+---------  [[1]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : (5)
+[2] SOURCE :  Next 3
+[3] ASSIGN_BEFORE : (3) = (e) - 1   Next 4
+[4] ASSIGN_BEFORE : (4) = (3) - 1   Next 5
+[5] ASSIGN_BEFORE : (5) = (4) - 1   Next 1
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : (4)
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+
+Cycle[ 1 ] start
+[4] COND_VALUE : (3) == "H"   Next 6 5
+[5] ASSIGN_AFTER : (3) = (3) + 1   Next 4
+Cycle[ 1 ] end
+
+[6] ASSIGN_AFTER : (4) = (3) + 1   Next 7
+[7] ASSIGN_AFTER : (5) = (4) + 1   Next 1
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = H
+
+Matched VCD: 0
+Question 1 : predicted answer = 17
+
+Matched VCD: 1
+Question 2 : predicted answer = 24
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 9 ) ]
+
+Number of training sequences = 5
+0 1 2 3 4 PCDs => VCDs 118 => Gamma 10 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+11100
+00011
+
+Generation of PCDs   took 0.13 minutes
+Generation of VCDs   took 0.00 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 54 ( 10 valid )
+Number of VCDs = 118 ( 10 VPCD, 108 VHCD_1N )
+Gamma = 10
+
+Number of VCDs in MGICDs  = 2
+Number of Nodes in MGICDs = 10
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : "Yes"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (4) == (3)   Next 1 6
+[6] ASSIGN_AFTER : (4) = (4) + 1   Next 5
+Cycle[ 1 ] end
+
+
+---------  [[1]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "No"
+[2] SOURCE :  Next 1
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : "Yes"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (4) == (3)   Next 1 6
+[6] ASSIGN_AFTER : (4) = (4) + 1   Next 5
+Cycle[ 1 ] end
+
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = Yes
+
+Matched VCD: 1
+Question 1 : predicted answer = No
+
+Matched VCD: 1
+Question 2 : predicted answer = No
+
+Matched VCD: 0
+Question 3 : predicted answer = Yes
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 10 ) ]
+
+Number of training sequences = 4
+0 1 2 3 PCDs => VCDs 167 => Gamma 6 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+1111
+
+Generation of PCDs   took 5.20 minutes
+Generation of VCDs   took 0.00 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 80 ( 15 valid )
+Number of VCDs = 167 ( 15 VPCD, 152 VHCD_1N )
+Gamma = 6
+
+Number of VCDs in MGICDs  = 1
+Number of Nodes in MGICDs = 6
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : (3)
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+
+Cycle[ 1 ] start
+[4] COND_VALUE : (3) == "1"   Next 5 1
+[5] ASSIGN_AFTER : (3) = (3) + 1   Next 4
+Cycle[ 1 ] end
+
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = 9
+
+Matched VCD: 0
+Question 1 : predicted answer = 10
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 11 ) ]
+
+Number of training sequences = 5
+0 1 2 3 4 PCDs => VCDs 187 => Gamma 11 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+11100
+00011
+
+Generation of PCDs   took 1.66 minutes
+Generation of VCDs   took 0.00 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 83 ( 10 valid )
+Number of VCDs = 187 ( 10 VPCD, 177 VHCD_1N )
+Gamma = 11
+
+Number of VCDs in MGICDs  = 2
+Number of Nodes in MGICDs = 11
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : "Yes"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (4) == (3)   Next 6 7
+[6] ASSIGN_AFTER : (4) = (4) + 1   Next 5
+Cycle[ 1 ] end
+
+[7] COND_VALUE : (4) == "="   Next 1 0
+
+---------  [[1]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "No"
+[2] SOURCE :  Next 1
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : "Yes"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (4) == (3)   Next 6 7
+[6] ASSIGN_AFTER : (4) = (4) + 1   Next 5
+Cycle[ 1 ] end
+
+[7] COND_VALUE : (4) == "="   Next 1 0
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = Yes
+
+Matched VCD: 1
+Question 1 : predicted answer = No
+
+Matched VCD: 1
+Question 2 : predicted answer = No
+
+Matched VCD: 0
+Question 3 : predicted answer = Yes
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 12 ) ]
+
+Number of training sequences = 8
+0 1 2 3 4 5 6 7 PCDs => VCDs 14289 => Gamma 13 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+11100000
+00011111
+
+Generation of PCDs   took 12.56 minutes
+Generation of VCDs   took 0.03 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 463 ( 34 valid )
+Number of VCDs = 14289 ( 34 VPCD, 14255 VHCD_1N )
+Gamma = 13
+
+Number of VCDs in MGICDs  = 2
+Number of Nodes in MGICDs = 13
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "Equal"
+[2] SOURCE :  Next 1
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : "Unequal"
+[2] SOURCE :  Next 3
+[3] ASSIGN_BEFORE : (3) = (e) - 1   Next 4
+[4] ASSIGN_BEFORE : (4) = (3) - 1   Next 5
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (4) == "="   Next 7 6
+[6] ASSIGN_BEFORE : (4) = (4) - 1   Next 5
+Cycle[ 1 ] end
+
+
+Cycle[ 2 ] start
+[7] COND_VALUE : (3) == (4)   Next 8 1
+[8] ASSIGN_BEFORE : (3) = (3) - 1   Next 9
+[9] ASSIGN_BEFORE : (4) = (4) - 1   Next 7
+Cycle[ 2 ] end
+
+
+---------  [[1]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : "Unequal"
+[2] SOURCE :  Next 3
+[3] ASSIGN_BEFORE : (3) = (e) - 1   Next 4
+[4] ASSIGN_BEFORE : (4) = (3) - 1   Next 5
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (4) == "="   Next 7 6
+[6] ASSIGN_BEFORE : (4) = (4) - 1   Next 5
+Cycle[ 1 ] end
+
+
+Cycle[ 2 ] start
+[7] COND_VALUE : (3) == (4)   Next 8 1
+[8] ASSIGN_BEFORE : (3) = (3) - 1   Next 9
+[9] ASSIGN_BEFORE : (4) = (4) - 1   Next 7
+Cycle[ 2 ] end
+
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = Equal
+
+Matched VCD: 0
+Question 1 : predicted answer = Equal
+
+Matched VCD: 0
+Question 2 : predicted answer = Equal
+
+Matched VCD: 0
+Question 3 : predicted answer = Equal
+
+Matched VCD: 1
+Question 4 : predicted answer = Unequal
+
+Matched VCD: 1
+Question 5 : predicted answer = Unequal
+
+Matched VCD: 0
+Question 6 : predicted answer = Equal
+
+Matched VCD: 1
+Question 7 : predicted answer = Unequal
+
+Matched VCD: 1
+Question 8 : predicted answer = Unequal
+
+Matched VCD: 1
+Question 9 : predicted answer = Unequal
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 13 ) ]
+
+Number of training sequences = 6
+0 1 2 3 4 5 PCDs => VCDs 7398 => Gamma 11 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+111111
+
+Generation of PCDs   took 9.00 minutes
+Generation of VCDs   took 0.02 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 451 ( 31 valid )
+Number of VCDs = 7398 ( 31 VPCD, 7367 VHCD_1N )
+Gamma = 11
+
+Number of VCDs in MGICDs  = 1
+Number of Nodes in MGICDs = 11
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : (3)
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (4) == "="   Next 7 6
+[6] ASSIGN_AFTER : (4) = (4) + 1   Next 5
+Cycle[ 1 ] end
+
+[7] ASSIGN_AFTER : (5) = (4) + 1   Next 8
+
+Cycle[ 2 ] start
+[8] COND_VALUE : (3) == (5)   Next 9 1
+[9] ASSIGN_AFTER : (3) = (3) + 1   Next 10
+[10] ASSIGN_AFTER : (5) = (5) + 1   Next 8
+Cycle[ 2 ] end
+
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = 1
+
+Matched VCD: 0
+Question 1 : predicted answer = 7
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 14 ) ]
+
+Number of training sequences = 8
+0 1 2 3 4 5 6 7 PCDs => VCDs 14129 => Gamma 12 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+11100000
+00011111
+
+Generation of PCDs   took 11.92 minutes
+Generation of VCDs   took 0.03 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 454 ( 37 valid )
+Number of VCDs = 14129 ( 37 VPCD, 14092 VHCD_1N )
+Gamma = 12
+
+Number of VCDs in MGICDs  = 2
+Number of Nodes in MGICDs = 12
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "Reversed"
+[2] SOURCE :  Next 1
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : "notReversed"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_BEFORE : (4) = (e) - 1   Next 5
+[5] ASSIGN_BEFORE : (5) = (4) - 1   Next 6
+
+Cycle[ 1 ] start
+[6] COND_VALUE : (3) == (5)   Next 7 1
+[7] ASSIGN_AFTER : (3) = (3) + 1   Next 8
+[8] ASSIGN_BEFORE : (5) = (5) - 1   Next 6
+Cycle[ 1 ] end
+
+
+---------  [[1]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : "notReversed"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_BEFORE : (4) = (e) - 1   Next 5
+[5] ASSIGN_BEFORE : (5) = (4) - 1   Next 6
+
+Cycle[ 1 ] start
+[6] COND_VALUE : (3) == (5)   Next 7 1
+[7] ASSIGN_AFTER : (3) = (3) + 1   Next 8
+[8] ASSIGN_BEFORE : (5) = (5) - 1   Next 6
+Cycle[ 1 ] end
+
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = Reversed
+
+Matched VCD: 0
+Question 1 : predicted answer = Reversed
+
+Matched VCD: 0
+Question 2 : predicted answer = Reversed
+
+Matched VCD: 0
+Question 3 : predicted answer = Reversed
+
+Matched VCD: 1
+Question 4 : predicted answer = notReversed
+
+Matched VCD: 1
+Question 5 : predicted answer = notReversed
+
+Matched VCD: 0
+Question 6 : predicted answer = Reversed
+
+Matched VCD: 1
+Question 7 : predicted answer = notReversed
+
+Matched VCD: 1
+Question 8 : predicted answer = notReversed
+
+Matched VCD: 1
+Question 9 : predicted answer = notReversed
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 15 ) ]
+
+Number of training sequences = 4
+0 1 2 3 PCDs => VCDs 131 => Gamma 11 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+1111
+
+Generation of PCDs   took 11.75 minutes
+Generation of VCDs   took 0.00 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 75 ( 13 valid )
+Number of VCDs = 131 ( 13 VPCD, 118 VHCD_1N )
+Gamma = 11
+
+Number of VCDs in MGICDs  = 1
+Number of Nodes in MGICDs = 11
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : (5)
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+
+Cycle[ 2 ] start
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (3) == "="   Next 7 6
+[6] ASSIGN_AFTER : (3) = (3) + 1   Next 5
+Cycle[ 1 ] end
+
+[7] COND_VALUE : (4) == "E"   Next 10 8
+[8] ASSIGN_AFTER : (4) = (4) + 1   Next 9
+[9] ASSIGN_AFTER : (3) = (3) + 1   Next 5
+Cycle[ 2 ] end
+
+[10] ASSIGN_AFTER : (5) = (3) + 1   Next 1
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = y
+
+Matched VCD: 0
+Question 1 : predicted answer = 2
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 16 ) ]
+
+Number of training sequences = 4
+0 1 2 3 PCDs => VCDs 167 => Gamma 9 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+1111
+
+Generation of PCDs   took 1.53 minutes
+Generation of VCDs   took 0.00 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 80 ( 15 valid )
+Number of VCDs = 167 ( 15 VPCD, 152 VHCD_1N )
+Gamma = 9
+
+Number of VCDs in MGICDs  = 1
+Number of Nodes in MGICDs = 9
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : (5)
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (3) == (4)   Next 8 6
+[6] ASSIGN_AFTER : (3) = (3) + 1   Next 7
+[7] ASSIGN_AFTER : (4) = (4) + 1   Next 5
+Cycle[ 1 ] end
+
+[8] ASSIGN_AFTER : (5) = (4) + 1   Next 1
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = 1
+
+Matched VCD: 0
+Question 1 : predicted answer = 4
+
+Matched VCD: 0
+Question 2 : predicted answer = 2
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 17 ) ]
+
+Number of training sequences = 6
+0 1 2 3 4 5 PCDs => VCDs 929 => Gamma 12 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+111000
+000111
+
+Generation of PCDs   took 4.17 minutes
+Generation of VCDs   took 0.00 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 149 ( 14 valid )
+Number of VCDs = 929 ( 14 VPCD, 915 VHCD_1N )
+Gamma = 12
+
+Number of VCDs in MGICDs  = 2
+Number of Nodes in MGICDs = 12
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : "true"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+
+Cycle[ 1 ] start
+[4] COND_VALUE : (3) == "d"   Next 6 5
+[5] ASSIGN_AFTER : (3) = (3) + 1   Next 4
+Cycle[ 1 ] end
+
+[6] ASSIGN_BEFORE : (4) = (3) - 1   Next 7
+[7] ASSIGN_AFTER : (5) = (3) + 1   Next 8
+[8] COND_VALUE : (5) == (4)   Next 1 0
+
+---------  [[1]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "false"
+[2] SOURCE :  Next 1
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : "true"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+
+Cycle[ 1 ] start
+[4] COND_VALUE : (3) == "d"   Next 6 5
+[5] ASSIGN_AFTER : (3) = (3) + 1   Next 4
+Cycle[ 1 ] end
+
+[6] ASSIGN_BEFORE : (4) = (3) - 1   Next 7
+[7] ASSIGN_AFTER : (5) = (3) + 1   Next 8
+[8] COND_VALUE : (5) == (4)   Next 1 0
+
+=======================================
+
+Matched VCD: 1
+Question 0 : predicted answer = false
+
+Matched VCD: 1
+Question 1 : predicted answer = false
+
+Matched VCD: 1
+Question 2 : predicted answer = false
+
+Matched VCD: 0
+Question 3 : predicted answer = true
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 18 ) ]
+
+Number of training sequences = 12
+0 1 2 3 4 5 6 7 8 9 10 11 PCDs => VCDs 66144 => Gamma 26 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+111100000000
+000011010000
+000000101111
+
+Generation of PCDs   took 24.59 minutes
+Generation of VCDs   took 0.65 minutes
+Generation of MGICDs took 0.12 minutes
+
+Number of PCDs = 2276 ( 39 valid )
+Number of VCDs = 66144 ( 39 VPCD, 66105 VHCD_1N )
+Gamma = 26
+
+Number of VCDs in MGICDs  = 3
+Number of Nodes in MGICDs = 24
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : (5)
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+
+Cycle[ 2 ] start
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (3) == "i"   Next 7 6
+[6] ASSIGN_AFTER : (3) = (3) + 1   Next 5
+Cycle[ 1 ] end
+
+[7] COND_VALUE : (4) == "v"   Next 10 8
+[8] ASSIGN_AFTER : (4) = (4) + 1   Next 9
+[9] ASSIGN_AFTER : (3) = (3) + 1   Next 5
+Cycle[ 2 ] end
+
+[10] ASSIGN_AFTER : (5) = (3) + 1   Next 1
+
+---------  [[1]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "Equal"
+[2] SOURCE :  Next 1
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : "Unequal"
+[2] SOURCE :  Next 3
+[3] ASSIGN_BEFORE : (3) = (e) - 1   Next 4
+[4] ASSIGN_BEFORE : (4) = (3) - 1   Next 5
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (4) == (3)   Next 7 6
+[6] ASSIGN_BEFORE : (4) = (4) - 1   Next 5
+Cycle[ 1 ] end
+
+
+Cycle[ 2 ] start
+[7] COND_VALUE : (3) == (4)   Next 8 1
+[8] ASSIGN_BEFORE : (3) = (3) - 1   Next 9
+[9] ASSIGN_BEFORE : (4) = (4) - 1   Next 7
+Cycle[ 2 ] end
+
+
+---------  [[2]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "Unequal"
+[2] SOURCE :  Next 3
+[3] ASSIGN_BEFORE : (3) = (e) - 1   Next 4
+[4] ASSIGN_BEFORE : (4) = (3) - 1   Next 5
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (4) == (3)   Next 7 6
+[6] ASSIGN_BEFORE : (4) = (4) - 1   Next 5
+Cycle[ 1 ] end
+
+
+Cycle[ 2 ] start
+[7] COND_VALUE : (3) == (4)   Next 8 1
+[8] ASSIGN_BEFORE : (3) = (3) - 1   Next 9
+[9] ASSIGN_BEFORE : (4) = (4) - 1   Next 7
+Cycle[ 2 ] end
+
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : (5)
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+
+Cycle[ 2 ] start
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (3) == "i"   Next 7 6
+[6] ASSIGN_AFTER : (3) = (3) + 1   Next 5
+Cycle[ 1 ] end
+
+[7] COND_VALUE : (4) == "v"   Next 10 8
+[8] ASSIGN_AFTER : (4) = (4) + 1   Next 9
+[9] ASSIGN_AFTER : (3) = (3) + 1   Next 5
+Cycle[ 2 ] end
+
+[10] ASSIGN_AFTER : (5) = (3) + 1   Next 1
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = y
+
+Matched VCD: 0
+Question 1 : predicted answer = 2
+
+Matched VCD: 1
+Question 2 : predicted answer = Equal
+
+Matched VCD: 2
+Question 3 : predicted answer = Unequal
+
+Matched VCD: 1
+Question 4 : predicted answer = Equal
+
+Matched VCD: 2
+Question 5 : predicted answer = Unequal
+
+Matched VCD: 2
+Question 6 : predicted answer = Unequal
+
+Matched VCD: 2
+Question 7 : predicted answer = Unequal
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 19 ) ]
+
+Number of training sequences = 7
+0 1 2 3 4 5 6 PCDs => VCDs 85377 => Gamma 11 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+1111111
+
+Generation of PCDs   took 6.60 minutes
+Generation of VCDs   took 0.19 minutes
+Generation of MGICDs took 0.01 minutes
+
+Number of PCDs = 1261 ( 72 valid )
+Number of VCDs = 85377 ( 72 VPCD, 85305 VHCD_1N )
+Gamma = 11
+
+Number of VCDs in MGICDs  = 1
+Number of Nodes in MGICDs = 11
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : (5)
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_BEFORE : (4) = (e) - 1   Next 5
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (3) == "="   Next 7 6
+[6] ASSIGN_AFTER : (3) = (3) + 1   Next 5
+Cycle[ 1 ] end
+
+[7] ASSIGN_BEFORE : (5) = (3) - 1   Next 8
+
+Cycle[ 2 ] start
+[8] COND_VALUE : (4) == "="   Next 1 9
+[9] ASSIGN_BEFORE : (4) = (4) - 1   Next 10
+[10] ASSIGN_BEFORE : (5) = (5) - 1   Next 8
+Cycle[ 2 ] end
+
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = h
+
+Matched VCD: 0
+Question 1 : predicted answer = g
+
+Matched VCD: 0
+Question 2 : predicted answer = f
+
+Matched VCD: 0
+Question 3 : predicted answer = b
+
+Matched VCD: 0
+Question 4 : predicted answer = d
+
+Matched VCD: 0
+Question 5 : predicted answer = c
+
+Matched VCD: 0
+Question 6 : predicted answer = b
+
+Matched VCD: 0
+Question 7 : predicted answer = a
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 20 ) ]
+
+Number of training sequences = 7
+0 1 2 3 4 5 6 PCDs => VCDs 69221 => Gamma 8 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+1111111
+
+Generation of PCDs   took 4.76 minutes
+Generation of VCDs   took 0.08 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 1133 ( 81 valid )
+Number of VCDs = 69221 ( 81 VPCD, 69140 VHCD_1N )
+Gamma = 8
+
+Number of VCDs in MGICDs  = 1
+Number of Nodes in MGICDs = 8
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : (4)
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_BEFORE : (4) = (e) - 1   Next 5
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (3) == "="   Next 1 6
+[6] ASSIGN_AFTER : (3) = (3) + 1   Next 7
+[7] ASSIGN_BEFORE : (4) = (4) - 1   Next 5
+Cycle[ 1 ] end
+
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = a
+
+Matched VCD: 0
+Question 1 : predicted answer = b
+
+Matched VCD: 0
+Question 2 : predicted answer = c
+
+Matched VCD: 0
+Question 3 : predicted answer = d
+
+Matched VCD: 0
+Question 4 : predicted answer = b
+
+Matched VCD: 0
+Question 5 : predicted answer = f
+
+Matched VCD: 0
+Question 6 : predicted answer = g
+
+Matched VCD: 0
+Question 7 : predicted answer = h
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 21 ) ]
+
+Number of training sequences = 8
+0 1 2 3 4 5 6 7 PCDs => VCDs 396 => Gamma 20 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+10000000
+01111100
+00000011
+
+Generation of PCDs   took 1.74 minutes
+Generation of VCDs   took 0.00 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 75 ( 18 valid )
+Number of VCDs = 396 ( 18 VPCD, 378 VHCD_1N )
+Gamma = 20
+
+Number of VCDs in MGICDs  = 3
+Number of Nodes in MGICDs = 15
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : "9"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 1
+
+---------  [[1]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "isDigit"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (5) = (s) + 1   Next 4
+[4] ASSIGN_BEFORE : (6) = (3) - 1   Next 5
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (6) == (5)   Next 1 6
+[6] ASSIGN_BEFORE : (6) = (6) - 1   Next 5
+Cycle[ 1 ] end
+
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : "9"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 1
+
+---------  [[2]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "isNotDigit"
+[2] SOURCE :  Next 1
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : "isDigit"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (5) = (s) + 1   Next 4
+[4] ASSIGN_BEFORE : (6) = (3) - 1   Next 5
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (6) == (5)   Next 1 6
+[6] ASSIGN_BEFORE : (6) = (6) - 1   Next 5
+Cycle[ 1 ] end
+
+
+=======================================
+
+Matched VCD: 1
+Question 0 : predicted answer = isDigit
+
+Matched VCD: 2
+Question 1 : predicted answer = isNotDigit
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 22 ) ]
+
+Number of training sequences = 7
+0 1 2 3 4 5 6 PCDs => VCDs 836 => Gamma 13 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+1000000
+0111111
+
+Generation of PCDs   took 7.78 minutes
+Generation of VCDs   took 0.01 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 301 ( 27 valid )
+Number of VCDs = 836 ( 27 VPCD, 809 VHCD_1N )
+Gamma = 13
+
+Number of VCDs in MGICDs  = 2
+Number of Nodes in MGICDs = 13
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : "9"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] COND_VALUE : (3) == "0"   Next 1 0
+
+---------  [[1]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : (7)
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (5) = (s) + 1   Next 4
+[4] ASSIGN_BEFORE : (6) = (3) - 1   Next 5
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (6) == (5)   Next 7 6
+[6] ASSIGN_BEFORE : (6) = (6) - 1   Next 5
+Cycle[ 1 ] end
+
+[7] ASSIGN_BEFORE : (7) = (6) - 1   Next 1
+
+=======================================
+
+Matched VCD: 1
+Question 0 : predicted answer = 6
+
+Matched VCD: 1
+Question 1 : predicted answer = 3
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 23 ) ]
+
+Number of training sequences = 7
+0 1 2 3 4 5 6 PCDs => VCDs 1512 => Gamma 10 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+1111111
+
+Generation of PCDs   took 7.68 minutes
+Generation of VCDs   took 0.01 minutes
+Generation of MGICDs took 0.00 minutes
+
+Number of PCDs = 315 ( 35 valid )
+Number of VCDs = 1512 ( 35 VPCD, 1477 VHCD_1N )
+Gamma = 10
+
+Number of VCDs in MGICDs  = 1
+Number of Nodes in MGICDs = 10
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : (7)
+[2] SOURCE :  Next 3
+[3] ASSIGN_BEFORE : (5) = (e) - 1   Next 4
+[4] ASSIGN_BEFORE : (6) = (3) - 1   Next 5
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (5) == "before"   Next 6 7
+[6] ASSIGN_BEFORE : (5) = (5) - 1   Next 5
+Cycle[ 1 ] end
+
+
+Cycle[ 2 ] start
+[7] COND_VALUE : (6) == (5)   Next 9 8
+[8] ASSIGN_BEFORE : (6) = (6) - 1   Next 7
+Cycle[ 2 ] end
+
+[9] ASSIGN_AFTER : (7) = (6) + 1   Next 1
+
+=======================================
+
+Matched VCD: 0
+Question 0 : predicted answer = 7
+
+Matched VCD: 0
+Question 1 : predicted answer = 4
+
+accuracy = 100
+
+
+===============================================================
+[ Dataset no ( 24 ) ]
+
+Number of training sequences = 11
+0 1 2 3 4 5 6 7 8 9 10 PCDs => VCDs 29302 => Gamma 23 ==> MGICDs
+
+Characteristic vectors of VCDs in the MGICDs:
+10000000000
+01110100000
+00001011111
+
+Generation of PCDs   took 15.84 minutes
+Generation of VCDs   took 0.09 minutes
+Generation of MGICDs took 0.02 minutes
+
+Number of PCDs = 770 ( 44 valid )
+Number of VCDs = 29302 ( 44 VPCD, 29258 VHCD_1N )
+Gamma = 23
+
+Number of VCDs in MGICDs  = 3
+Number of Nodes in MGICDs = 19
+
+=======================================
+VCDs of MGICDs : 
+
+---------  [[0]]  Poistive CD  ---------
+
+[0] SINK : 
+[1] Z_NODE : "9"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+[5] COND_VALUE : (4) == "1"   Next 1 0
+
+---------  [[1]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "Right"
+[2] SOURCE :  Next 1
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : "Wrong"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (5) = (s) + 1   Next 4
+[4] ASSIGN_BEFORE : (6) = (e) - 1   Next 5
+[5] ASSIGN_BEFORE : (7) = (3) - 1   Next 6
+
+Cycle[ 1 ] start
+[6] COND_VALUE : (7) == (6)   Next 8 7
+[7] ASSIGN_BEFORE : (7) = (7) - 1   Next 6
+Cycle[ 1 ] end
+
+
+Cycle[ 2 ] start
+[8] COND_VALUE : (7) == (5)   Next 1 9
+[9] ASSIGN_BEFORE : (7) = (7) - 1   Next 8
+Cycle[ 2 ] end
+
+
+---------  [[2]]  Hybrid CD  ---------
+
+---- [0] PCD ----
+
+[0] SINK : 
+[1] Z_NODE : "Wrong"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (5) = (s) + 1   Next 4
+[4] ASSIGN_BEFORE : (6) = (e) - 1   Next 5
+[5] ASSIGN_BEFORE : (7) = (3) - 1   Next 6
+
+Cycle[ 1 ] start
+[6] COND_VALUE : (7) == (6)   Next 8 7
+[7] ASSIGN_BEFORE : (7) = (7) - 1   Next 6
+Cycle[ 1 ] end
+
+
+Cycle[ 2 ] start
+[8] COND_VALUE : (7) == (5)   Next 1 9
+[9] ASSIGN_BEFORE : (7) = (7) - 1   Next 8
+Cycle[ 2 ] end
+
+
+---- [1] NCD ----
+
+[0] SINK : 
+[1] Z_NODE : "9"
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+[5] COND_VALUE : (4) == "1"   Next 1 0
+
+=======================================
+
+Matched VCD: 1
+Question 0 : predicted answer = Right
+
+Matched VCD: 2
+Question 1 : predicted answer = Wrong
+
+Matched VCD: 1
+Question 2 : predicted answer = Right
+
+Matched VCD: 2
+Question 3 : predicted answer = Wrong
+
+Matched VCD: 2
+Question 4 : predicted answer = Wrong
+
+accuracy = 100
+
+
+===============================================================
+Dataset no (0) accuracy = 100   nNodes = 10   took 0.07 minutes
+Dataset no (1) accuracy = 100   nNodes = 8   took 0.66 minutes
+Dataset no (2) accuracy = 100   nNodes = 5   took 0.51 minutes
+Dataset no (3) accuracy = 100   nNodes = 4   took 0.42 minutes
+Dataset no (4) accuracy = 100   nNodes = 16   took 0.13 minutes
+Dataset no (5) accuracy = 100   nNodes = 8   took 1.63 minutes
+Dataset no (6) accuracy = 100   nNodes = 9   took 2.47 minutes
+Dataset no (7) accuracy = 100   nNodes = 7   took 1.51 minutes
+Dataset no (8) accuracy = 100   nNodes = 14   took 11.93 minutes
+Dataset no (9) accuracy = 100   nNodes = 10   took 0.13 minutes
+Dataset no (10) accuracy = 100   nNodes = 6   took 5.20 minutes
+Dataset no (11) accuracy = 100   nNodes = 11   took 1.66 minutes
+Dataset no (12) accuracy = 100   nNodes = 13   took 12.59 minutes
+Dataset no (13) accuracy = 100   nNodes = 11   took 9.02 minutes
+Dataset no (14) accuracy = 100   nNodes = 12   took 11.95 minutes
+Dataset no (15) accuracy = 100   nNodes = 11   took 11.75 minutes
+Dataset no (16) accuracy = 100   nNodes = 9   took 1.53 minutes
+Dataset no (17) accuracy = 100   nNodes = 12   took 4.18 minutes
+Dataset no (18) accuracy = 100   nNodes = 24   took 25.36 minutes
+Dataset no (19) accuracy = 100   nNodes = 11   took 6.80 minutes
+Dataset no (20) accuracy = 100   nNodes = 8   took 4.84 minutes
+Dataset no (21) accuracy = 100   nNodes = 15   took 1.74 minutes
+Dataset no (22) accuracy = 100   nNodes = 13   took 7.79 minutes
+Dataset no (23) accuracy = 100   nNodes = 10   took 7.69 minutes
+Dataset no (24) accuracy = 100   nNodes = 19   took 15.95 minutes
+
+Overall Accuracy = 100
+===============================================================

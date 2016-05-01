@@ -1,0 +1,19 @@
+[0] SINK : 
+[1] Z_NODE : (5)
+[2] SOURCE :  Next 3
+[3] ASSIGN_AFTER : (3) = (s) + 1   Next 4
+[4] ASSIGN_AFTER : (4) = (3) + 1   Next 5
+
+Cycle[ 2 ] start
+
+Cycle[ 1 ] start
+[5] COND_VALUE : (3) == "="   Next 7 6
+[6] ASSIGN_AFTER : (3) = (3) + 1   Next 5
+Cycle[ 1 ] end
+
+[7] COND_VALUE : (4) == "E"   Next 10 8
+[8] ASSIGN_AFTER : (4) = (4) + 1   Next 9
+[9] ASSIGN_AFTER : (3) = (3) + 1   Next 5
+Cycle[ 2 ] end
+
+[10] ASSIGN_AFTER : (5) = (3) + 1   Next 1
