@@ -1,6 +1,6 @@
 #=====================================================================
 # select the animation file u want to run
-stepsFile = open ( 'experiments/Group_A_results/animationFiles/animation_dataset_20.dat' , 'r'); #
+stepsFile = open ( 'experiments/Group_B_results/animationFiles/animation_dataset_2.dat' , 'r'); #
 
 #=====================================================================
 from tkinter import *
