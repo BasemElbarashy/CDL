@@ -2,7 +2,7 @@
 This is a new framework to learn simples patterns from a few number of examples and use them to learn more complex ones. the learned models are perfectly interpretable and its depth depends on the question. What is meant by depth here is that
 whenever needed, the model learns to break down the problem into simpler subproblems and solves them using previously learned models, CDL is written in C++ and tested on 32 small datasets
 
-The paper can be found at: arxiv..   
+The paper can be found at https://arxiv.org/abs/1605.00241
 
 
 Group_B (dataset_2): Three one-digit numbers addition
