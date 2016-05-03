@@ -54,48 +54,6 @@ whenever needed, the model learns to break down the problem into simpler subprob
 <p><img src="https://raw.githubusercontent.com/BasemElbarashy/CDL/master/GifFiles/Group_A_dataset_24.gif" alt="example2"></p>
 
 <h2>
-<a id="directories" class="anchor" href="#directories" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Directories</h2>
-
-<p><code>src/</code>       - source files</p>
-
-<p><code>dataset/</code>   - three groups of small datasets (Group_A: 25 datasets, Group_B: 5 datasets,Group_C: 2 datasets). The first line in Group_A.dat contains the number of the first dataset in the file (must be 0). The next line contains the number of training sequences followed by the training seqences. The next line conatins number of testing sequences followed by the testing sequences.   </p>
-
-<p><code>experiments/</code>   </p>
-
-<ul>
-<li>3 outputFiles: contain MGICDs learned in each group of datasets and some details about training</li>
-<li>32 animation files that explain how MGICD solve the test questions, they can be shown by running <code>animate.py</code> but you need first to change the directory of the animation file in the first line in <code>animate.py</code>. You can also change the animation speed by changing the value of nodeTime (Tested on Python 3).</li>
-<li>Most of PCDs in the outputFiles can be displayed by <code>visualizeCD.py</code>, but it need first to be copied in CD.dat</li>
-</ul>
-
-<h2>
-<a id="installation-on-linux" class="anchor" href="#installation-on-linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation on Linux</h2>
-
-<pre><code>$ make
-$ ./runner
-</code></pre>
-
-<h2>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
-
-<p>You can edit <code>Driver.cpp</code> to learn datasets in Group_A, Group_B or Group_C. For example, to learn the first dataset in  Group_A write this in main() function:</p>
-
-<div class="highlight highlight-source-c++"><pre>    IOH.loadDatasetsAndQuestionsFromFile(<span class="pl-s"><span class="pl-pds">"</span>dataset/Group_A.dat<span class="pl-pds">"</span></span>);
-    Constants::redirectStdoutToOutputFile = <span class="pl-c1">true</span>;  <span class="pl-c">//redirect stdout to OutputFile.txt</span>
-    <span class="pl-en">setHyperParameters</span>(<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">7</span>,<span class="pl-c1">0</span>,<span class="pl-c1">0</span>,<span class="pl-c1">1</span>);           <span class="pl-c">//set hyperparamters for the 25 dataset in file Group_A.dat</span>
-    TE.learnAndTest(<span class="pl-c1">0</span>);                            <span class="pl-c">//learn &amp; test the first Dataset in file Group_A.dat</span></pre></div>
-
-<p>The results and learned models will be saved in <code>OutputFile.txt</code>.
-To learn all the datasets in Group_A: </p>
-
-<div class="highlight highlight-source-c++"><pre>    IOH.loadDatasetsAndQuestionsFromFile(<span class="pl-s"><span class="pl-pds">"</span>dataset/Group_A.dat<span class="pl-pds">"</span></span>);
-    Constants::redirectStdoutToOutputFile = <span class="pl-c1">true</span>;  <span class="pl-c">//redirect stdout to OutputFile.txt</span>
-    <span class="pl-en">setHyperParameters</span>(<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">7</span>,<span class="pl-c1">0</span>,<span class="pl-c1">0</span>,<span class="pl-c1">1</span>);           <span class="pl-c">//set hyperparamters for the 25 dataset in file Group_A.dat</span>
-    TE.learnAndTest();                             <span class="pl-c">//learn &amp; test all Datasets in file Group_A.dat</span></pre></div>
-
-<p>You can also write a new dataset and test it but it must be formatted like other datasets</p>
-
-<h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
 
 <p>This project is licensed under the terms of the MIT license</p>
