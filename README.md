@@ -11,7 +11,7 @@ Group_B (dataset_2): Three one-digit numbers addition
 
 <br><br><br>
 
-(dataset_19): Reverse task Group_A
+Group_A (dataset_19): Reverse task
 ---------------------
 ![example2](GifFiles/Group_A_dataset_19.gif)
 
